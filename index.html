@@ -1,1 +1,519 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <style>
+        .campo-obrigatorio {
+            border: 2px solid red;
+        }
+        
+        /* Adicione aqui o código CSS que forneci anteriormente */
+        .secao {
+            padding: 15px; /* Adapte o valor conforme necessário */
+            margin-bottom: 20px; /* Adapte o valor conforme necessário */
+        }
+        .oculto {
+            display: none;
+        }
+        #chave {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        #botao-chave {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://oxifix.com.br/wp-content/uploads/2020/08/cropped-oxifix-logo.png" alt="Logo da OxiFix" style="width: 175px; height: auto; display: block; margin: 0 auto;">
+    <br><br><br><br>
+    <h2>Diagnóstico - Tomada de Decisão</h2>
+    <br><br>
+    
+    <h3 class="oculto"><button type="button" onclick="carregarArquivo()">Carregar Info Empresa</button></h3>
+
+    <br><br><br>
+ 
+   <!--<h3 class="oculto">Informações da Empresa</h3>
+<br>
+ <h5 class="oculto">Certifique-se de preencher todos os campos</h5>
+<form id="info_empresa" class="oculto">
+    <br><label for="nome_empresa">Nome da Empresa:</label><br>
+    <input type="text" id="nome_empresa" name="nome_empresa"><br><br>
+
+    <label for="cnpj_empresa">CNPJ da Empresa:</label><br>
+    <input type="text" id="cnpj_empresa" name="cnpj_empresa"><br><br>
+
+    <label for="responsavel_empresa">Responsável:</label><br>
+    <input type="text" id="responsavel_empresa" name="responsavel_empresa"><br><br>
+
+    <label for="contato_empresa">Contato:</label><br>
+    <input type="text" id="contato_empresa" name="contato_empresa"><br><br>
+	
+    </form>
+  -->
+    <br>
+
+    <!-- Botão flutuante com a imagem -->
+    <button id="botao-chave" style="background-color: rgba(255, 255, 255, 0); border: none; position: fixed; bottom: 50px; right: 20px;" onclick="toggleChave()">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/6682800/65dcc87a371f7_cropped-oxifix-logocomfundotransparente.png" alt="Descrição da Imagem" style="width: 70px; height: auto; margin-right: 5px; opacity: 0.7;">
+    </button>
+    
+
+   <!-- Área para exibir a chave (inicialmente oculta) -->
+    <div id="chave" class="oculto" onclick="toggleChave()" style="position: fixed; bottom: 130px; right: 20px; background-color: #ffffff; padding: 25px; border-radius: 2px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);opacity: 0.99;">
+       <!-- <h3>.</h3> -->
+        <p><strong>Empresa:</strong> Oxifix</p>
+        <p><strong>Área:</strong> Marketing e Vendas</p>
+        <br>
+        <br>
+        <p><strong>Instruções:</strong> 
+        <br>
+        <br>
+        <p>Siga a sequencia de leitura da página</p>
+        <br> <p>Clique em 'Carregar Exemplo' e responda substituindo os campos preenchidos.</p>
+        <br> <p>Salvar as Respostas: coloque o nome da empresa e área</p>
+        <p>(O arquivo que será enviado por Email é salvo na sua pasta "Downloads")</p>
+        <br> <p>Preencha o endereço de Email de destino - Diretoria</p>
+        <br> <p>Clique em 'Enviar por Email' e anexe o arquivo salvo</p>
+         <br>
+          <br>
+           <br>
+    </div>
+    
+
+    <!-- Adicione o restante do seu código aqui -->
+    
+    <h3>Introdução</h3>
+    <br>
+    <p>O objetivo dos comentários e  das perguntas abaixo é enxergar, definir e mensurar o que está sendo feito pelo Terceirizado Atual e o que impede que os resultados atuais atinjam as expectativas.</p> <br>
+    Na hipótese de não ter ou não saber respostas,<br> vamos preencher com "não sabemos" ou "não temos a informação". 
+    <br><br><br>
+    <h3 class="oculto">Alinhamento: Diretoria (alta gestão) e Gestão de Marketing e Vendas:</h3>
+    
+    <br><br>
+    
+    <p class="oculto">Confirmar com os gestores ( Salvar em documento confidencial a ser enviado como anexo por Email):<br>
+    <br>.Clareza e alihamento sobre o objetivo geral de vendas:<br>
+    - Números especificados a partir do tamanho do mercado; quanto em vendas, em quanto tempo;<br><br>
+
+    Estratégia vinculada ao Objetivo Geral<br> e implementada  com ações táticas e medições ao longo do tempo.<br><br>
+
+    Confirmar se as definições em porcentagem de quanto é direcionado para participação em eventos<br>e quanto para atividades gerenciáveis na internet.
+    estão sendo implementadas e acompanhadas.</p>
+
+    <br>
+
+    <p class="oculto">Vamos avaliar um provável ajuste de rota a partir das perguntas e respostas abaixo.</p>
+    <p class="oculto"><br><br><br><br><br><br><br><br><br><br><br> </p>
+
+    <p>Vamos avaliar um provável ajuste de rota a partir das perguntas e respostas abaixo.</p>
+    <br>
+    <h5>Certifique-se de preencher todos os campos</h5>
+    <br>Salvar e anexar ao enviar por Email para a Direção.
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+  
+
+    <img src="https://oxifix.com.br/wp-content/uploads/2020/08/cropped-oxifix-logo.png" alt="Logo da OxiFix" style="width: 100px; height: auto; display: block; margin: 0 auto;">
+    <br><br><br><br>
+    <h2>Formulário - Perguntas Chave</h2>
+    <br>
+    <h5>Certifique-se de preencher todos os campos</h5>
+    <br>
+    <h3></h3>
+
+
+    <br>
+    <button type="button" onclick="carregarRespostas()">Carregar Exemplo</button>
+    <br>
+    <br>
+<br>
+    <button type="button" onclick="carregarArquivoSalvo()">Carregar Arquivo Salvo</button>
+    
+    <br><br>
+    <form id="formulario">
+        <!-- Aqui ficam as perguntas do formulário -->
+
+	<p>1. Atualmente, como os clientes em potencial buscam e encontram nossos produtos e serviços?</p>
+        
+        <br>
+        
+        <label for="busca_clientes">Resposta:<span>*</span></label><br>
+    <span>Atualmente, nossos clientes em potencial buscam por:</span>
+    <input type="text" id="busca_clientes" name="busca_clientes" required>
+        no Google.    
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        
+        <p>2. Como clientes em potencial enxergam os concorrentes para o que buscam?</p>
+        <br><label for="concorrentes">Resposta:<span>*</span></label><br>
+    <span>O potencial cliente faz a pesquisa por:</span>
+    <input type="text" id="concorrentes" name="concorrentes" required>
+     e os fornecedores são listados.<br>
+        <br>
+        <label for="outra_resposta">Outra resposta:<span>*</span></label><br>
+    <textarea id="outra_resposta" name="outra_resposta" rows="4" cols="50" required></textarea>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <p>3. Qual o volume de pesquisa do(s) produto(s) que oferecemos?</p>
+    <br>
+
+    <label for="volume_total_pesquisa">Volume total de pesquisa:<span>*</span></label>
+    <input type="text" id="volume_total_pesquisa" name="volume_total_pesquisa" required><br><br>
+
+    <label for="visitas_percentual">Percentual de Visitas - % do total do volume de pesquisas:<span>*</span></label>
+    <input type="text" id="visitas_percentual" name="visitas_percentual" required><br><br>
+
+    <label for="outra_resposta_volume">Outra resposta ou dúvidas:<span>*</span></label><br>
+    <textarea id="outra_resposta_volume" name="outra_resposta_volume" rows="4" cols="50" required></textarea>
+
+
+
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <img src="https://oxifix.com.br/wp-content/uploads/2020/08/cropped-oxifix-logo.png" alt="Logo da OxiFix" style="width: 100px; height: auto; display: block; margin: 0 auto;">
+    <br><br><br><br>
+        <p>4. Quantos leads são captados a partir de visitas nos últimos <input type="text" id="periodo_em_meses" name="periodo_em_meses" required> meses*?</p>
+
+
+
+
+        <br>
+        <p>Preencher os campos relacionados.</p>
+        
+        <label for="total_visitas">Total de visitas:<span>*</span></label><br>
+    <input type="text" id="total_visitas" name="total_visitas" required><br><br>
+
+    <label for="total_leads">Total de leads:<span>*</span></label><br>
+    <input type="text" id="total_leads" name="total_leads" required><br><br>
+
+    <label for="total_vendas">Total de vendas:<span>*</span></label><br>
+    <input type="text" id="total_vendas" name="total_vendas" required><br><br>
+
+        
+        
+        <br><br><br><br><br><br><br><br><br>
+
+        
+        <p>5. Qual o ciclo de venda, ou seja, do contato do cliente até o fechamento?</p>
+
+    <br>
+    <label for="ciclo_venda">Resposta:</label><br>
+    <span>Em média, o tempo entre o contato com o cliente e o fechamento é de</span>
+    <input type="text" id="ciclo_venda" name="ciclo_venda" required> dia(s)*<br><br>
+        
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        
+        <p>6. O que é feito com os leads que visitaram o site?</p>
+        <br>
+        <label for="leads_visitaram">Resposta: Indicar o fluxo atual da sequência de ações internas e externas.</label><br>
+    <textarea id="leads_visitaram" name="leads_visitaram" rows="4" cols="50" required></textarea>
+    <br><br>
+
+        <br><br><br><br><br><br><br>
+
+
+        <p>7. Confirme o volume de pesquisa dos produtos que nós oferecemos e o número de visitas<br> no site, vitrine digital ou loja virtual</p>
+        
+        <br><br>
+        
+        <label for="volume_pesquisa_produto">Volume de pesquisa do produto*:</label>
+    <input type="text" id="volume_pesquisa_produto" name="volume_pesquisa_produto" required>
+    <br><br>
+
+        <label for="numero_visitas_site">Número de visitas no site*:</label>
+    <input type="text" id="numero_visitas_site" name="numero_visitas_site" required>
+
+        
+         
+        <br><br><br><br><br><br>
+    <img src="https://oxifix.com.br/wp-content/uploads/2020/08/cropped-oxifix-logo.png" alt="Logo da OxiFix" style="width: 100px; height: auto; display: block; margin: 0 auto;">
+    <br><br><br><br>
+        <button type="button" onclick="salvarRespostas()">Salvar Respostas</button>
+<br>
+<br>
+<br>
+<button type="button" onclick="carregarArquivoSalvo()">Carregar Arquivo Salvo</button>
+    </form>
+    <br><br><br><br><br><br>
+        
+   <!-- <h3>Carregar exemplo preenchido</h3>
+<input type="file" id="carregar_arquivo" accept=".json" style="display: none;">
+<label for="" style="cursor: pointer;">Escolher Arquivo</label>
+
+    <br>
+    <button type="button" onclick="carregarRespostas()">Carregar Exemplo</button> -->
+
+    <br><br><br>
+
+   <h3>Enviar por Email</h3>
+<br>
+<h4>Digite o Email de destino e ao clicar em<br>
+[Enviar por Email]<br><br> O sistema salva o arquivo na pasta de downloads<br> e abre o e-mail para envio. Anexe o arquivo salvo.</h4>
+<br><br>
+<form id="enviar_email_form">
+    <label for="email_destino">Email de Destino:</label><br>
+    <input type="email" id="email_destino" name="email_destino"><br><br>
+
+    <button type="button" onclick="prepararEmail()">Enviar por Email</button>
+
+    <br><br><br><br><br><br>
+</form>
+
+
+	
+
+
+    <script>
+
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const camposObrigatorios = document.querySelectorAll('.campo-obrigatorio');
+            camposObrigatorios.forEach(campo => {
+                campo.addEventListener('input', function() {
+                    if (campo.value) {
+                        campo.classList.remove('campo-obrigatorio');
+                    }
+                });
+            });
+        });
+
+
+function verificarCamposObrigatorios() {
+    const campos = document.querySelectorAll('input[required], textarea[required]');
+    let todosPreenchidos = true;
+    let primeiroCampoNaoPreenchido;
+
+    campos.forEach(campo => {
+        // Verificar se o campo está visível e não está oculto
+        if (!campo.closest('.oculto') && campo.offsetParent !== null && !campo.value.trim()) {
+            campo.classList.add('campo-obrigatorio');
+            todosPreenchidos = false;
+            if (!primeiroCampoNaoPreenchido) {
+                primeiroCampoNaoPreenchido = campo;
+            }
+        } else {
+            campo.classList.remove('campo-obrigatorio');
+        }
+    });
+
+    if (!todosPreenchidos) {
+        alert('Por favor, preencha todos os campos obrigatórios.');
+        // Rolar para o primeiro campo não preenchido
+        primeiroCampoNaoPreenchido.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    return todosPreenchidos;
+}
+
+
+function salvarRespostas() {
+    const camposPreenchidos = verificarCamposObrigatorios();
+    
+    if (!camposPreenchidos) {
+        return; // Não salva se campos obrigatórios não estiverem preenchidos
+    }
+
+    // Capturar os dados do formulário
+    const respostas = {
+        busca_clientes: document.getElementById('busca_clientes').value,
+        concorrentes: document.getElementById('concorrentes').value,
+        outra_resposta: document.getElementById('outra_resposta').value,
+        volume_total_pesquisa: document.getElementById('volume_total_pesquisa').value,
+        visitas_percentual: document.getElementById('visitas_percentual').value,
+        outra_resposta_volume: document.getElementById('outra_resposta_volume').value,
+        periodo_em_meses: document.getElementById('periodo_em_meses').value,
+        total_visitas: document.getElementById('total_visitas').value,
+        total_leads: document.getElementById('total_leads').value,
+        total_vendas: document.getElementById('total_vendas').value,
+        ciclo_venda: document.getElementById('ciclo_venda').value,
+        leads_visitaram: document.getElementById('leads_visitaram').value,
+        volume_pesquisa_produto: document.getElementById('volume_pesquisa_produto').value,
+        numero_visitas_site: document.getElementById('numero_visitas_site').value,
+      /* nome_empresa: document.getElementById('nome_empresa').value,
+        cnpj_empresa: document.getElementById('cnpj_empresa').value,
+        responsavel_empresa: document.getElementById('responsavel_empresa').value,
+        contato_empresa: document.getElementById('contato_empresa').value */
+    };
+
+    // Solicitar ao usuário um nome para o arquivo JSON
+    const nomeArquivo = prompt("Por favor, insira um nome para o arquivo JSON:");
+
+    // Verificar se o usuário inseriu um nome de arquivo válido
+    if (nomeArquivo) {
+        // Adicionar a extensão .json se não estiver presente
+        const filename = nomeArquivo.trim().endsWith('.json') ? nomeArquivo.trim() : nomeArquivo.trim() + '.json';
+
+        // Converter o objeto de respostas em JSON
+        const jsonString = JSON.stringify(respostas);
+
+        // Criar um Blob a partir do JSON
+        const blob = new Blob([jsonString], { type: 'application/json' });
+
+        // Criar um URL para o Blob
+        const url = URL.createObjectURL(blob);
+
+        // Criar um elemento de âncora para download
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+
+        // Simular um clique no elemento de âncora para iniciar o download
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        // Limpar o URL criado após o download
+        setTimeout(() => URL.revokeObjectURL(url), 0);
+
+        // Exibir as respostas no console para fins de depuração
+        console.log(respostas);
+    }
+}
+
+
+
+function carregarRespostas() {
+    // Simulação de carregamento de respostas de um arquivo JSON
+    const respostas = {
+        busca_clientes: "produto tal",
+        concorrentes: "produto tal ou...",
+        outra_resposta: "Sua reposta  ou apenas OK se o campo acima for suficiente",
+        volume_total_pesquisa: "0",
+        visitas_percentual: "0",
+        outra_resposta_volume: "Seu comentário ou dúvida",
+        periodo_em_meses: "0",
+        total_visitas: "0",
+        total_leads: "0",
+        total_vendas: "0",
+        ciclo_venda: "0",
+        leads_visitaram: "Interno / externo Item:  Descrição Resumida:     passo 1  passo 2  passo 3 etc.",
+        volume_pesquisa_produto: "0",
+        numero_visitas_site: "0"
+    };
+
+    // Preencher os campos do formulário com as respostas carregadas
+    Object.keys(respostas).forEach(chave => {
+        const campo = document.getElementById(chave);
+        if (campo) {
+            campo.value = respostas[chave];
+        }
+    });
+
+    // Ocultar a seção de informações de cadastro da empresa ao carregar respostas
+    const secaoInfoEmpresa = document.getElementById('info_empresa');
+    if (secaoInfoEmpresa) {
+        secaoInfoEmpresa.classList.add('oculto');
+    }
+}
+
+    // Preencher os campos do formulário com as respostas carregadas
+    Object.keys(respostas).forEach(chave => {
+        const campo = document.getElementById(chave);
+        if (campo) {
+            campo.value = respostas[chave];
+        }
+    });
+
+function carregarArquivoSalvo() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = function(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.readAsText(file, 'UTF-8');
+            reader.onload = function(readerEvent) {
+                const conteudo = readerEvent.target.result;
+                preencherFormulario(JSON.parse(conteudo));
+            }
+        }
+    }
+    input.click();
+}
+
+
+
+
+
+
+
+
+        function carregarArquivo() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = '.json';
+            input.onchange = function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.readAsText(file, 'UTF-8');
+                    reader.onload = function(readerEvent) {
+                        const conteudo = readerEvent.target.result;
+                        preencherFormulario(JSON.parse(conteudo));
+                    }
+                }
+            }
+            input.click();
+        }
+
+        function preencherFormulario(respostas) {
+    // Preencher os campos do formulário com as respostas carregadas
+    Object.keys(respostas).forEach(chave => {
+        const campo = document.getElementById(chave);
+        if (campo) {
+            campo.value = respostas[chave];
+        }
+    });
+
+    // Mostrar seção de informações da empresa após carregar respostas
+    const secaoInfoEmpresa = document.getElementById('info_empresa');
+    const secaoTitulo = document.querySelector('.oculto');
+    if (secaoInfoEmpresa && secaoTitulo) {
+        secaoInfoEmpresa.classList.remove('oculto');
+        secaoTitulo.classList.remove('oculto');
+    }
+}
+
+        function toggleChave() {
+            const chave = document.getElementById('chave');
+            if (chave.style.display === 'none') {
+                chave.style.display = 'block';
+            } else {
+                chave.style.display = 'none';
+            }
+        }
+        
+        function prepararEmail() {
+        const emailDestino = document.getElementById('email_destino').value;
+        const assunto = 'Respostas do Diagnóstico - Tomada de Decisão da Empresa: ';
+        const corpoEmail = 'Confirmar anexo com arquivo contendo as respostas do diagnóstico da empresa: .\n\nAtenciosamente, A Direção';
+        const linkEmail = `mailto:${emailDestino}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpoEmail)}`;
+        
+        window.location.href = linkEmail;
+    }
+        
+    </script>
+</body>
+</html>
